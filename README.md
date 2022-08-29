@@ -14,6 +14,7 @@ United states over the 10-year period 1999–2008. You may use any R package you
 ## Questions & Answers by Codes, plots
 - Have total emissions from  decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total  emission from all 
   sources for each of the years 1999, 2002, 2005, and 2008.
+  
   # Plot1.R (Code)
   ```
   
