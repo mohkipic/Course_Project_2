@@ -18,7 +18,7 @@ United states over the 10-year period 1999–2008. You may use any R package you
   ```
   
   ```
-  ### Plot 1
+  # Plot 1
   ![plot1](/plot1.png)
 - Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (\color{red}{\verb|fips == "24510"|}fips == "24510") from 1999 to 2008? Use the base 
   plotting system to make a plot answering this question. 
@@ -26,7 +26,7 @@ United states over the 10-year period 1999–2008. You may use any R package you
   ```
   
   ```
-  ### Plot 2
+  # Plot 2
   ![plot2](/plot2.png)
 - Of the four types of sources indicated by the \color{red}{\verb|type|}type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen
   decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot
@@ -35,21 +35,21 @@ United states over the 10-year period 1999–2008. You may use any R package you
   ```
   
   ```
-  ### Plot 3
+  # Plot 3
   ![plot3](/plot3.png)
 - Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?.
   # Plot4.R (Code)
   ```
   
   ```
-  ### Plot 4
+  # Plot 4
   ![plot4](/plot4.png)
 - How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?.
   # Plot5.R (Code)
   ```
   
   ```
-  ### Plot 5
+  # Plot 5
   ![plot5](/plot5.png)
 - Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California 
   (\color{red}{\verb|fips == "06037"|}fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?.
@@ -57,5 +57,5 @@ United states over the 10-year period 1999–2008. You may use any R package you
   ```
   
   ```
-  ### Plot 6
+  # Plot 6
   ![plot6](/plot6.png)
