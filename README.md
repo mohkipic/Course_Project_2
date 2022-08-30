@@ -26,17 +26,16 @@ United states over the 10-year period 1999–2008. You may use any R package you
   ```
   ### Plot_1
   ![Plot_1](/Plot_1.png)
-- Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (\color{red}{\verb|fips == "24510"|}fips == "24510") from 1999 to 2008? Use the base 
-  plotting system to make a plot answering this question. 
+- Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot 
+  answering this question. 
   ### Plot_2.R (Code)
   ```
   
   ```
   ### Plot_2
   ![Plot_2](/Plot_2.png)
-- Of the four types of sources indicated by the \color{red}{\verb|type|}type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen
-  decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot
-  answer this question.
+- Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions 
+  from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
   ### Plot_3.R (Code)
   ```
   
@@ -57,8 +56,8 @@ United states over the 10-year period 1999–2008. You may use any R package you
   ```
   ### Plot_5
   ![Plot_5](/Plot_5.png)
-- Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California 
-  (\color{red}{\verb|fips == "06037"|}fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?.
+- Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). 
+  Which city has seen greater changes over time in motor vehicle emissions?.
   ### Plot_6.R (Code)
   ```
   
