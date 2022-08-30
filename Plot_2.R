@@ -1,0 +1,8 @@
+SCC <- readRDS("Source_Classification_Code.rds")
+NEI <- readRDS("summarySCC_PM25.rds")
+NEI$Emissions <- as.numeric(NEI$Emissions)
+NEI$fips <- as.numeric(NEI$fips)
+NEI <- transform(NEI, year = factor(year))
+fip <- subset(NEI,fips=="24510")
+tmi <- tapply(fip$Emissions, fip$year, sum)
+barplot(tmi,xlab="Years", ylab="Total Emissions",main="Total Emissions Over Years in Baltimore City")
