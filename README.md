@@ -50,7 +50,8 @@ United states over the 10-year period 1999–2008. You may use any R package you
   NEI <- readRDS("summarySCC_PM25.rds")
   NEI$Emissions <- as.numeric(NEI$Emissions)
   NEI$fips <- as.numeric(NEI$fips)
-  ggplot(NEI,aes(factor(year),Emissions,fill=type)) +
+  fip <- subset(NEI,fips=="24510")
+  ggplot(fip,aes(factor(year),Emissions,fill=type)) +
     geom_bar(stat="identity") +
     theme_bw() + guides(fill=FALSE)+
     facet_grid(.~type,scales = "free",space="free") + 
