@@ -37,7 +37,7 @@ United states over the 10-year period 1999–2008. You may use any R package you
   NEI <- transform(NEI, year = factor(year))
   fip <- subset(NEI,fips=="24510")
   tmi <- tapply(fip$Emissions, fip$year, sum)
-  barplot(tmi,xlab="Years", ylab="Total Emissions",main="Total Emissions Over Years during fips = 24510")
+  barplot(tmi,xlab="Years", ylab="Total Emissions",main="Total Emissions Over Years in Baltimore City")
   ```
   ### Plot_2
   ![Plot_2](/Plot_2.png)
@@ -91,7 +91,7 @@ United states over the 10-year period 1999–2008. You may use any R package you
   tmi <- transform(tmi, year = factor(year))
   fip <- subset(tmi,fips=="24510")
   tmf <- tapply(fip$Emissions, fip$year, sum)
-  barplot(tmf,xlab="Years", ylab="Total Emissions",main="Vehicles Source Emissions Across US From 1999 to 2008 Year")
+  barplot(tmf,xlab="Years", ylab="Total Emissions",main="Vehicles Source Emissions in Baltimore City From 1999 to 2008 Year")
   ```
   ### Plot_5
   ![Plot_5](/Plot_5.png)
