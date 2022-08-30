@@ -45,7 +45,17 @@ United states over the 10-year period 1999–2008. You may use any R package you
   from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
   ### Plot_3.R (Code)
   ```
-  
+  library(ggplot2)
+  SCC <- readRDS("Source_Classification_Code.rds")
+  NEI <- readRDS("summarySCC_PM25.rds")
+  NEI$Emissions <- as.numeric(NEI$Emissions)
+  NEI$fips <- as.numeric(NEI$fips)
+  ggplot(NEI,aes(factor(year),Emissions,fill=type)) +
+    geom_bar(stat="identity") +
+    theme_bw() + guides(fill=FALSE)+
+    facet_grid(.~type,scales = "free",space="free") + 
+    labs (x="year") + labs (y="Total Emission ")+ 
+    labs(title=expression("Emissions, Baltimore City 1999-2008 by Source Type"))
   ```
   ### Plot_3
   ![Plot_3](/Plot_3.png)
