@@ -17,7 +17,12 @@ United states over the 10-year period 1999–2008. You may use any R package you
   
   ### Plot_1.R (Code)
   ```
-  
+  SCC <- readRDS("Source_Classification_Code.rds")
+  NEI <- readRDS("summarySCC_PM25.rds")
+  NEI$Emissions <- as.numeric(NEI$Emissions)
+  NEI <- transform(NEI, year = factor(year))
+  tmi <- tapply(NEI$Emissions, NEI$year, sum)
+  barplot(tmi,xlab="Years", ylab="Total Emissions",main="Total Emissions Over Years")
   ```
   ### Plot_1
   ![Plot_1](/Plot_1.png)
