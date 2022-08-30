@@ -62,7 +62,17 @@ United states over the 10-year period 1999–2008. You may use any R package you
 - Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?.
   ### Plot4.R (Code)
   ```
-  
+  library(sqldf)
+  SCC <- readRDS("Source_Classification_Code.rds")
+  NEI <- readRDS("summarySCC_PM25.rds")
+  NEI$Emissions <- as.numeric(NEI$Emissions)
+  NEI$fips <- as.numeric(NEI$fips)
+  data <- sqldf('SELECT * FROM SCC WHERE `EI.Sector` LIKE "%Coal"')
+  SCC_code <- data$SCC
+  tmi <- subset(NEI, SCC%in%SCC_code)
+  tmi <- transform(tmi, year = factor(year))
+  tmf <- tapply(tmi$Emissions, tmi$year, sum)
+  barplot(tmf,xlab="Years", ylab="Total Emissions",main="Coal Source Emissions Across US From 1999 to 2008 Year")
   ```
   ### Plot_4
   ![Plot_4](/Plot_4.png)
