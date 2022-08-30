@@ -15,48 +15,48 @@ United states over the 10-year period 1999–2008. You may use any R package you
 - Have total emissions from  decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total  emission from all 
   sources for each of the years 1999, 2002, 2005, and 2008.
   
-  ### Plot1.R (Code)
+  ### Plot_1.R (Code)
   ```
   
   ```
-  ### Plot 1
-  ![plot1](/plot1.png)
+  ### Plot_1
+  ![Plot_1](/Plot_1.png)
 - Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (\color{red}{\verb|fips == "24510"|}fips == "24510") from 1999 to 2008? Use the base 
   plotting system to make a plot answering this question. 
-  ### Plot2.R (Code)
+  ### Plot_2.R (Code)
   ```
   
   ```
-  ### Plot 2
-  ![plot2](/plot2.png)
+  ### Plot_2
+  ![Plot_2](/Plot_2.png)
 - Of the four types of sources indicated by the \color{red}{\verb|type|}type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen
   decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot
   answer this question.
-  ### Plot3.R (Code)
+  ### Plot_3.R (Code)
   ```
   
   ```
-  ### Plot 3
-  ![plot3](/plot3.png)
+  ### Plot_3
+  ![Plot_3](/Plot_3.png)
 - Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?.
   ### Plot4.R (Code)
   ```
   
   ```
-  ### Plot 4
-  ![plot4](/plot4.png)
+  ### Plot_4
+  ![Plot_4](/Plot_4.png)
 - How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?.
   ### Plot5.R (Code)
   ```
   
   ```
-  ### Plot 5
-  ![plot5](/plot5.png)
+  ### Plot_5
+  ![Plot_5](/Plot_5.png)
 - Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California 
   (\color{red}{\verb|fips == "06037"|}fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?.
-  ### Plot6.R (Code)
+  ### Plot_6.R (Code)
   ```
   
   ```
-  ### Plot 6
-  ![plot6](/plot6.png)
+  ### Plot_6
+  ![Plot_6](/Plot_6.png)
