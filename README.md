@@ -79,7 +79,18 @@ United states over the 10-year period 1999–2008. You may use any R package you
 - How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?.
   ### Plot5.R (Code)
   ```
-  
+  library(sqldf)
+  SCC <- readRDS("Source_Classification_Code.rds")
+  NEI <- readRDS("summarySCC_PM25.rds")
+  NEI$Emissions <- as.numeric(NEI$Emissions)
+  NEI$fips <- as.numeric(NEI$fips)
+  data <- sqldf('SELECT * FROM SCC WHERE `EI.Sector` LIKE "%Vehicles"')
+  SCC_code <- data$SCC
+  tmi <- subset(NEI, SCC%in%SCC_code)
+  tmi <- transform(tmi, year = factor(year))
+  fip <- subset(tmi,fips=="24510")
+  tmf <- tapply(fip$Emissions, fip$year, sum)
+  barplot(tmf,xlab="Years", ylab="Total Emissions",main="Vehicles Source Emissions Across US From 1999 to 2008 Year")
   ```
   ### Plot_5
   ![Plot_5](/Plot_5.png)
